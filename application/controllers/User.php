@@ -81,11 +81,10 @@ class User extends CI_Controller
 
 		if (!empty($result)){
 			$this->session->set_flashdata("error", "This startup in your favorite already");
-			redirect('/startup/show/'.$user,'reload');
 		}else{
 			$this->session->set_flashdata("success", "Added to your favorite.");
-			redirect('/startup/show/'.$user,'reload');
 		}
+			redirect('/startup/show/'.$user,'reload');
 
 
 	}
