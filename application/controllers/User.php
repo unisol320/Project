@@ -85,8 +85,6 @@ class User extends CI_Controller
 			$this->session->set_flashdata("success", "Added to your favorite.");
 		}
 			redirect('/startup/show/'.$user,'reload');
-
-
 	}
 
 	public function favorite($id)

@@ -83,7 +83,7 @@ class Startup extends CI_Controller
 		$category = ($this->uri->segment(6)) ? $this->uri->segment(6) : 0;
 		$per_page = 2;
 		$uri_segment = 5;
-		$base_url = base_url().'startup/show/'.$id.'/'.$order;
+		$base_url = base_url().'startup/show/'.$id.'/'.$order.'/'.$category;
 
 		if($user->role == 1){
 			$totalRows = $this->startup_model->getUserNumberStartups($id , $order);
